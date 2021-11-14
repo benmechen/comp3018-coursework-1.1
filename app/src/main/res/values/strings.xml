@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Finger Painter</string>
+    <string name="tvWidth">Select the width</string>
+    <string name="btSave">Save</string>
+    <string name="tvShape">Select the shape</string>
+    <string name="rbRounded">Rounded</string>
+    <string name="rbButt">Butt</string>
+    <string name="rbSquare">Square</string>
+</resources>

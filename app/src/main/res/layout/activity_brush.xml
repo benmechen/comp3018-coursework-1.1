@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".BrushActivity">
+
+        <TextView
+            android:id="@+id/tvWidth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/tvWidth"
+            app:layout_constraintBottom_toTopOf="@+id/sbWidth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <SeekBar
+            android:id="@+id/sbWidth"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="32dp"
+            android:max="100"
+            android:min="1"
+            app:layout_constraintBottom_toTopOf="@+id/btSave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btSave"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="onClickSave"
+            android:text="@string/btSave"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/rgShape"
+            android:layout_width="0dp"
+            android:layout_height="163dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="48dp"
+            android:checkedButton="@id/rbRounded"
+            app:layout_constraintBottom_toTopOf="@+id/sbWidth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tvShape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvShape" />
+
+            <RadioButton
+                android:id="@+id/rbRounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rbRounded" />
+
+            <RadioButton
+                android:id="@+id/rbSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rbSquare" />
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="selectedColour"
+            type="int" />
+    </data>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ColourActivity">
+
+            <GridLayout
+                android:id="@+id/glColourGrid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:rowCount="4"
+                android:useDefaultMargins="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btBlack"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    app:pickerColour="@color/black"
+                    app:selectedColour="@{selectedColour}" />
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btGrey"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    app:pickerColour="#AAAAAA"
+                    app:selectedColour="@{selectedColour}" />
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btWhite"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    app:pickerColour="#FFFFFF"
+                    app:selectedColour="@{selectedColour}" />
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btBlue"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    android:shadowRadius="10"
+                    app:pickerColour="#26C6DA"
+                    app:selectedColour="@{selectedColour}" />
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btCyan"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    app:pickerColour="#29B6F6"
+                    app:selectedColour="@{selectedColour}" />
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btLightBlue"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    app:pickerColour="#42A5F5"
+                    app:selectedColour="@{selectedColour}" />
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btDarkPurple"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    app:pickerColour="#5C6BC0"
+                    app:selectedColour="@{selectedColour}" />
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btPurple"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    app:pickerColour="#7E57C2"
+                    app:selectedColour="@{selectedColour}" />
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btPinkDark"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    app:pickerColour="#AB47BC"
+                    app:selectedColour="@{selectedColour}" />
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btPink"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    app:pickerColour="#EC407A"
+                    app:selectedColour="@{selectedColour}" />
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btRed"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    app:pickerColour="#EF5350"
+                    app:selectedColour="@{selectedColour}" />
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btOrangeDark"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    app:pickerColour="#FF7043"
+                    app:selectedColour="@{selectedColour}" />
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btOrange"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    app:pickerColour="#FFA726"
+                    app:selectedColour="@{selectedColour}" />
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btYellow"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    app:pickerColour="#FFCA28"
+                    app:selectedColour="@{selectedColour}" />
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btYellowGreen"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    app:pickerColour="#D4E157"
+                    app:selectedColour="@{selectedColour}" />
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btLime"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    app:pickerColour="#9CCC65"
+                    app:selectedColour="@{selectedColour}" />
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btGreen"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    app:pickerColour="#66BB6A"
+                    app:selectedColour="@{selectedColour}" />
+
+                <com.psybm7.fingerpainter.components.ColourButton
+                    android:id="@+id/btGreenDark"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:onClick="onClickColour"
+                    app:pickerColour="#26A69A"
+                    app:selectedColour="@{selectedColour}" />
+            </GridLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
